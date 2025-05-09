@@ -5,7 +5,56 @@
   list-style: none;
 }
 
-.body {
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
+body {
+  background-color: white;
+}
+
+/* Default (desktop) styles are already in your HTML inline classes */
+/* Tablet version (768px - 1024px) */
+@media (max-width: 1024px) {
+  header div {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  nav {
+    gap: 20px;
+    font-size: 14px;
+  }
+  svg {
+    width: 180px;
+    height: 50px;
+  }
+  .flex.gap-\[30px\] {
+    gap: 20px;
+  }
+}
+/* Mobile version (max 767px) */
+@media (max-width: 767px) {
+  header div {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  svg {
+    width: 150px;
+    height: 40px;
+  }
+  .flex.gap-\[30px\] {
+    gap: 15px;
+    margin-top: 10px;
+  }
+  section .content {
+    padding: 0 20px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
